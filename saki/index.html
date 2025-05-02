@@ -81,21 +81,18 @@
                      <nav>
                         <ul>
                            <li>
-                              <a class="current-menu-item" href="index.html">Home</a>
+                              <a class="current-menu-item" href="#">Home</a>
                            </li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="services.html">Services</a></li>
-                           <li><a href="portfolio.html">Portfolios</a></li>
-                           <li>
-                              <a href="blog.html">Blog</a>
-                           </li>
-                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="#resume-section">About</a></li>
+                           <li><a href="#services-section">Services</a></li>
+                           <li><a href="#portfolios">Portfolios</a></li>
+                           <li><a href="#contact-section">Contact</a></li>
                         </ul>
                      </nav>
                   </div>
                   <div class="mobile-menu d-lg-none"></div>
                   <div class="header-button">
-                     <a href="#" class="tj-btn-primary-2">Resume
+                     <button type="button" onclick="downloadResume()" class="tj-btn-primary-2">Resume
                         <span class="icon_box">
                            <span class="icon_first">
                               <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
@@ -122,7 +119,7 @@
                               </svg>
                            </span>
                         </span>
-                     </a>
+                     </button>
                   </div>
                   <div class="menu-bar d-lg-none">
                      <button>
@@ -153,20 +150,19 @@
                   <div class="header-menu">
                      <nav>
                         <ul>
-                           <li><a class="current-menu-item" href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="services.html">Services</a></li>
-                           <li><a href="portfolio.html">Portfolios</a></li>
                            <li>
-                              <a href="blog.html">Blog</a>
+                              <a class="current-menu-item" href="#">Home</a>
                            </li>
-                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="#resume-section">About</a></li>
+                           <li><a href="#services-section">Services</a></li>
+                           <li><a href="#portfolios">Portfolios</a></li>
+                           <li><a href="#contact-section">Contact</a></li>
                         </ul>
                      </nav>
                   </div>
                   <div class="mobile-menu d-lg-none"></div>
                   <div class="header-button">
-                     <a href="#" class="tj-btn-primary-2">Resume
+                     <button type="button" onclick="downloadResume()" class="tj-btn-primary-2">Resume
                         <span class="icon_box">
                            <span class="icon_first">
                               <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
@@ -193,7 +189,7 @@
                               </svg>
                            </span>
                         </span>
-                     </a>
+                     </button>
                   </div>
                   <div class="menu-bar d-lg-none">
                      <button>
@@ -356,7 +352,7 @@
                                     </p>
                                  </div>
                                  <div class="about-button d-flex">
-                                    <a href="#" class="btn tj-btn-primary-2">Contact Me
+                                    <a href="#contact-section" class="btn tj-btn-primary-2">Contact Me
                                        <span class="icon_box">
                                           <span class="icon_first">
                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -485,7 +481,7 @@
          <!-- SKILLS SECTION END -->
 
          <!-- PROJECT SECTION START -->
-         <section class="project-section" id="works-section">
+         <section class="project-section" id="portfolios">
             <div class="container">
                <div class="row">
                   <div class="col-12">
@@ -948,29 +944,6 @@
                                  </li>
                               </ul>
                            </div>
-
-                           <div class="sidebar_widget contact_form">
-                              <div class="widget_title">
-                                 <h3 class="title">Get in Touch</h3>
-                              </div>
-
-                              <form action="index.html">
-                                 <div class="form_group">
-                                    <input type="text" name="name" id="name" placeholder="Name" autocomplete="off" />
-                                 </div>
-                                 <div class="form_group">
-                                    <input type="email" name="semail" id="semail" placeholder="Email"
-                                       autocomplete="off" />
-                                 </div>
-                                 <div class="form_group">
-                                    <textarea name="smessage" id="smessage" placeholder="Your message"
-                                       autocomplete="off"></textarea>
-                                 </div>
-                                 <div class="form_btn">
-                                    <button class="btn tj-btn-primary" type="submit">Send Message</button>
-                                 </div>
-                              </form>
-                           </div>
                         </div>
                      </div>
                   </div>
@@ -1238,7 +1211,7 @@
                         <div class="contact-form-box order-2 order-md-1 wow fadeInLeft" data-wow-delay=".3s">
                            <div class="section-header">
                               <h2 class="section-title">
-                                 Let’s work<br />
+                                 Let's work<br />
                                  together!
                               </h2>
                               <p>I design and code beautifully simple things and i love what i do. Just simple like
@@ -1246,7 +1219,7 @@
                               </p>
                            </div>
                            <div class="tj-contact-form style-2">
-                              <form id="contact-form">
+                              <form id="contact-form" action="https://formspree.io/f/mrbpzqrk" method="POST">
                                  <div class="form_group">
                                     <input type="text" name="conName" id="conName" placeholder="First name"
                                        autocomplete="off" />
@@ -1388,10 +1361,10 @@
                   <div class="footer-menu">
                      <nav>
                         <ul>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="services.html">Services</a></li>
-                           <li><a href="portfolio.html">Portfolios</a></li>
-                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="#resume-section">About</a></li>
+                           <li><a href="#services-section">Services</a></li>
+                           <li><a href="#portfolios">Portfolios</a></li>
+                           <li><a href="#contact-section">Contact</a></li>
                         </ul>
                      </nav>
                   </div>
@@ -1406,6 +1379,7 @@
 
       <!-- JS here -->
       <script src="assets/js/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
 
       <script src="assets/js/gsap.min.js"></script>
@@ -1429,6 +1403,98 @@
       <script src="assets/js/meanmenu.js"></script>
       <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         function downloadResume() {
+            const fileId = '1EsDR3gXeLF-z8ScWptOyMdmVICk0ieHY';
+            const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+            window.open(downloadUrl, '_blank');
+         }
+      </script>
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            var form = document.getElementById("contact-form");
+
+            form.addEventListener("submit", async function (event) {
+               event.preventDefault();
+
+               // Get form fields
+               const firstName = form
+                  .querySelector('input[name="conName"]')
+                  .value.trim();
+               const lastName = form
+                  .querySelector('input[name="conLName"]')
+                  .value.trim();
+               const email = form
+                  .querySelector('input[name="conEmail"]')
+                  .value.trim();
+               const phone = form
+                  .querySelector('input[name="conPhone"]')
+                  .value.trim();
+               const message = form.querySelector('textarea[name="conMessage"]').value.trim();
+
+               // Validation
+               if (
+                  !firstName ||
+                  !lastName ||
+                  !email ||
+                  !phone ||
+                  !message
+               ) {
+                  Swal.fire({
+                     icon: "warning",
+                     title: "Oops!",
+                     text: "Please fill out all fields before submitting.",
+                  });
+                  return;
+               }
+
+               // Show loading alert
+               Swal.fire({
+                  title: "Sending...",
+                  text: "Please wait while we send your message.",
+                  icon: "info",
+                  allowOutsideClick: false,
+                  didOpen: () => {
+                     Swal.showLoading();
+                  },
+               });
+
+               // Prepare form data
+               var formData = new FormData(form);
+
+               try {
+                  let response = await fetch(form.action, {
+                     method: form.method,
+                     body: formData,
+                     headers: { Accept: "application/json" },
+                  });
+
+                  if (response.ok) {
+                     // Success Alert
+                     Swal.fire({
+                        icon: "success",
+                        title: "Message Sent!",
+                        text: "Thank you for reaching out. I'll get back to you soon.",
+                        confirmButtonText: "Back to Home",
+                     }).then(() => {
+                        window.location.href = "/";
+                     });
+
+                     form.reset(); // Reset form fields
+                  } else {
+                     throw new Error("Server error");
+                  }
+               } catch (error) {
+                  // Error Alert
+                  Swal.fire({
+                     icon: "error",
+                     title: "Oops!",
+                     text: "Something went wrong. Please try again later.",
+                  });
+               }
+            });
+         });
+      </script>
    </body>
 
 </html>

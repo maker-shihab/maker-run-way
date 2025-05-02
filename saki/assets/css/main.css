@@ -109,6 +109,7 @@ html,
 body {
 	min-height: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 img {
@@ -4097,3 +4098,8 @@ body.absolute_header .breadcrumb_area {
 }
 
 /* END: Modal CSS */
+
+button {
+	outline: none !important;
+	border: none !important;
+}
