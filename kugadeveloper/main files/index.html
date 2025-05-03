@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
   <body>
     <!-- Header ::Start -->
     <header>
-      <nav class="py-4">
-        <div class="container">
+      <div class="header_top">
+        <div class="container-fluid">
           <div class="row gy-3">
             <div class="col-md-6">
-              <a class="navbar-brand">
+              <div class="navbar-brand">
                 <img src="https://placehold.co/270x67" alt="logo" />
-              </a>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="row gx-2 gy-3 justify-content-end">
@@ -50,241 +55,402 @@
             </div>
           </div>
         </div>
-      </nav>
-      <div class="main_menu">
-        <div class="container">
-          <!-- Mian Menu -->
-          <div class="desktop_menu">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 3</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 4</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 5</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 6</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 7</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 8</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Menu -->
-          <div class="menuDropdown dropdown">
-            <button id="menu-toggle" class="menu-toggle btn btn-outline-secondary dropdown-toggle" id="menuDropdown"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-chevron-up"></i>
-              <span>MENU</span>
-            </button>
-            <ul class="dropdown-menu nav justify-content-center" aria-labelledby="menuDropdown">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 3</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 4</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 5</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 6</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 7</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nav 8</a>
-              </li>
-            </ul>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Navigation 1 </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                            <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Navigation 2 </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                            <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Navigation 3 </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                            <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Current Page </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                          <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                            <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                              <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                          <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item active"> <a class="nav-link" href="#">Contacts</a> </li>
+                    </ul>
+                  </div>
+                  <!-- navbar-collapse.// -->
+                </div>
+                <!-- container-fluid.// -->
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- Header ::End -->
-    <section class="carousel_area">
-      <div class="container mt-5">
-        <div class="carousele_box">
-          <h5 class="text-primary">Card Title</h5>
-          <!-- Carousel -->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="https://placehold.co/150x45" alt="Image 1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.co/150x45" alt="Image 1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.co/150x45" alt="Image 1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.co/150x45" alt="Image 1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.co/150x45" alt="Image 1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.co/150x45" alt="Image 1" />
+    <!-- Main ::Start -->
+    <main>
+      <aside class="side_content">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="aside_title">Current Page</h4>
+            <div class="sidebar p-3">
+              <!-- Content Title -->
+              <div class="toggle-btn caret main-toggle">Content Title</div>
+              <div class="sidebar bg-light p-3">
+                <!-- Content Title -->
+                <div class="mb-2">
+                  <a class="nav-link fw-bold" data-bs-toggle="collapse" href="#contentCollapse" role="button"
+                    aria-expanded="false" aria-controls="contentCollapse">
+                    Content Title
+                  </a>
+                  <div class="collapse" id="contentCollapse" data-bs-parent=".sidebar">
+                    <ul class="list-unstyled ps-3">
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#generalInfo" role="button"
+                          aria-expanded="false">
+                          General Information
+                        </a>
+                        <div class="collapse nested-collapse" id="generalInfo" data-bs-parent="#contentCollapse">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="nav-link">Category 1</a></li>
+                            <li><a href="#" class="nav-link">Category 2</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#subContent1" role="button"
+                          aria-expanded="false">
+                          Sub Content 2
+                        </a>
+                        <div class="collapse nested-collapse" id="subContent1" data-bs-parent="#contentCollapse">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="nav-link">Category 1</a></li>
+                            <li><a href="#" class="nav-link">Category 2</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#subContent2" role="button"
+                          aria-expanded="false">
+                          Sub Content 2
+                        </a>
+                        <div class="collapse nested-collapse" id="subContent2" data-bs-parent="#contentCollapse">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="nav-link">Category 1</a></li>
+                            <li><a href="#" class="nav-link">Category 2</a></li>
+                            <li><a href="#" class="nav-link">Category 3</a></li>
+                            <li><a href="#" class="nav-link">Category 4</a></li>
+                            <li><a href="#" class="nav-link">Category 5</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
-                <!-- Navigation buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                <!-- Procedures -->
+                <div class="mb-2">
+                  <a class="nav-link fw-bold" data-bs-toggle="collapse" href="#proceduresCollapse" role="button"
+                    aria-expanded="false" aria-controls="proceduresCollapse">
+                    Procedures
+                  </a>
+                  <div class="collapse" id="proceduresCollapse" data-bs-parent=".sidebar">
+                    <ul class="list-unstyled ps-3">
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#processA" role="button"
+                          aria-expanded="false">
+                          Process A
+                        </a>
+                        <div class="collapse nested-collapse" id="processA" data-bs-parent="#proceduresCollapse">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="nav-link">Step 1</a></li>
+                            <li><a href="#" class="nav-link">Step 2</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#processB" role="button"
+                          aria-expanded="false">
+                          Process B
+                        </a>
+                        <div class="collapse nested-collapse" id="processB" data-bs-parent="#proceduresCollapse">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="nav-link">Step 1</a></li>
+                            <li><a href="#" class="nav-link">Step 2</a></li>
+                            <li><a href="#" class="nav-link">Step 3</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Main ::Start -->
-    <main>
-      <section class="main_content mt-5">
-        <div class="container">
-          <div class="row gx-4 gy-4">
-            <div class="col-lg-5">
-              <div>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                      type="button" role="tab" aria-controls="home" aria-selected="true">
-                      Tab 1
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                      type="button" role="tab" aria-controls="profile" aria-selected="false">
-                      Tab 2
-                    </button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="tabNav">
+      </aside>
+      <section class="page_content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 pt-5">
+              <div class="ctPage_head">
+                <h6>Current Page</h6>
+                <h2>Content Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna
+                  aliqua.</p>
+              </div>
+            </div>
+            <div class="col-md-12 pt-5">
+              <div class="rgCart">
+                <div class="rgHead">
+                  <h3>General Information</h3>
+                </div>
+                <div class="row gx-5">
+                  <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna
+                      aliqua.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>Category 1</h4>
                       <ul>
-                        <li>
-                          <a href="#" class="pdf-link">
-                            <i class="fa-regular fa-file-pdf"></i> Link 1 | FR
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="pdf-link">
-                            <i class="fa-regular fa-file-pdf"></i> Link 2
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="pdf-link">
-                            <i class="fa-regular fa-file-pdf"></i> Link 3
-                          </a>
-                        </li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    This is some placeholder content the Profile tab's
-                    associated content. Clicking another tab will toggle the
-                    visibility of this one for the next. The tab JavaScript
-                    swaps classes to control the content visibility and styling.
-                    You can use it with tabs, pills, and any other .nav-powered
-                    navigation.
-                  </div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    This is some placeholder content the Profile tab's
-                    associated content. Clicking another tab will toggle the
-                    visibility of this one for the next. The tab JavaScript
-                    swaps classes to control the content visibility and styling.
-                    You can use it with tabs, pills, and any other .nav-powered
-                    navigation.
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>Category 2</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-7">
-              <div class="row hero_content gx-4 gy-4">
-                <div class="col-md-6">
-                  <img src="https://placehold.co/360x360" alt="hero_image" />
+            <div class="col-md-12 py-5">
+              <div class="rgCart">
+                <div class="rgHead">
+                  <h3>Sub Content 2</h3>
                 </div>
-                <div class="col-md-6">
-                  <img src="https://placehold.co/360x360" alt="hero_image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Card Section -->
-      <section class="cards_content mt-5 mb-5">
-        <div class="container">
-          <div class="row gx-4 gy-4">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary mb-4">Card Title</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque vitae tristique massa.
-                  </p>
-                  <ul class="list-unstyled">
-                    <li>
-                      <i class="fa-solid fa-envelope"></i>
-                      <span>email@email.com</span>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-phone-flip"></i>
-                      <span>x-xxx-xxx-xxxx</span>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-fax"></i>
-                      <span>xxx-xxx-xxxx</span>
-                    </li>
-                  </ul>
-                  <p class="card-text">
-                    <small class="text-muted">Hours: Monday-Friday, 8:00am-8:00pm (ET)</small>
-                  </p>
+                <div class="row gx-5">
+                  <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna
+                      aliqua.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>Category 1</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>Category 2</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary mb-4">Card Title</h5>
-                  <p class="pb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque vitae tristique massa. Quisque at consectetur enim,
-                    a auctor nulla. Ut dignissim, ipsum et porttitor tempor,
-                    velit ipsum ultrices nunc, non fringilla nisl est blandit
-                    sapien. Vestibulum. Nam eleifend suscipit ipsum, ac commodo
-                    lectus mollis quis. Nam vitae mattis augue.
-                  </p>
-                  <div class="text-end">
-                    <a href="#" class="learn-more">
-                      <span>Learn more</span>
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+            <div class="col-md-12 pb-5">
+              <div class="rgCart">
+                <div class="rgHead">
+                  <h3>Sub Content 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.</p>
+                </div>
+                <div class="row gx-5">
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>Category 1</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>Category 2</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 3</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-5">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 4</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-5">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 5</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-5">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 6</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 7</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 8</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="rgWidget">
+                      <h4>CATEGORY 9</h4>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -296,7 +462,7 @@
     <!-- Main ::End -->
     <!-- Footer ::Start -->
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row gy-3">
           <div class="col-md-6">
             <div class="ftLeft">
@@ -311,16 +477,18 @@
             </div>
           </div>
           <div class="col-md-6">
-            <h5>Company Name</h5>
-            <h5>Company Address</h5>
-            <h5>Company Phone Number</h5>
+            <div class="ftRight">
+              <h5>Company Name</h5>
+              <h5>Company Address</h5>
+              <h5>Company Phone Number</h5>
+            </div>
           </div>
         </div>
       </div>
     </footer>
     <!-- Footer ::End -->
     <!-- Script -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
